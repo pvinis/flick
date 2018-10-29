@@ -5,5 +5,15 @@
   "main": "index.js",
   "repository": "git@github.com:pvinis/flick.git",
   "author": "Pavlos Vinieratos <pvinis@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "bin": {
+    "flick": "./index.js"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clui": "^0.3.6",
+    "configstore": "^4.0.0",
+    "inquirer": "^6.2.0",
+    "minimist": "^1.2.0"
+  }
 }
