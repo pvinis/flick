@@ -1,0 +1,9 @@
+{
+  "name": "flick",
+  "version": "0.1.0",
+  "description": "flick the switch between light and dark mode",
+  "main": "index.js",
+  "repository": "git@github.com:pvinis/flick.git",
+  "author": "Pavlos Vinieratos <pvinis@gmail.com>",
+  "license": "MIT"
+}
