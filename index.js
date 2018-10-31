@@ -29,6 +29,11 @@ const config = new Configstore(
 const run = () => {
   const argv = require('minimist')(process.argv.slice(2));
 
+  if (argv.v || argv.version) {
+    console.log(pkg.version)
+    return
+  }
+
   const arg0 = argv._[0]
   const shade = (() => {
     if (arg0 === 'on' || arg0 === 'light') {
