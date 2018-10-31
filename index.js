@@ -28,15 +28,17 @@ const run = () => {
   const argv = require('minimist')(process.argv.slice(2));
 
   const arg0 = argv._[0]
-  if (arg0 === 'on' || arg0 === 'light') {
-    goLight()
-  } else if (arg0 === 'off' || arg0 === 'dark') {
-    goDark()
-  } else {
-    const currShade = config.get(CfgKeys.Dark)
-    const nextShade = !currShade
-    go(nextShade)
-  }
+  const shade = (() => {
+    if (arg0 === 'on' || arg0 === 'light') {
+      return Shade.Light
+    } else if (arg0 === 'off' || arg0 === 'dark') {
+      return Shade.Dark
+    } else {
+      const currShade = config.get(CfgKeys.Dark)
+      return !currShade
+    }
+  })()
+  go(shade)
 }
 
 const goLight = () => go(Shade.Light)
