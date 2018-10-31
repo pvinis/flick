@@ -6,6 +6,8 @@ const minimist = require('minimist')
 const Configstore = require('configstore')
 const pkg = require('./package.json')
 
+const runExtensions = require('./extensions')
+
 const Shade = {
   Light: false,
   Dark: true,
@@ -39,6 +41,7 @@ const run = () => {
     }
   })()
   go(shade)
+  runExtensions(shade)
 }
 
 const goLight = () => go(Shade.Light)
