@@ -1,5 +1,6 @@
 {
-  "name": "flick",
+  "name": "flickjs",
+  "actualName": "flick",
   "version": "0.1.1",
   "description": "🌝 🌚 Switch between light and dark mode, and have all your tools swap!",
   "main": "index.js",

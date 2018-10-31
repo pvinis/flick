@@ -18,7 +18,7 @@ const CfgKeys = {
 }
 
 const config = new Configstore(
-  pkg.name, 
+  pkg.actualName, 
   {
      [CfgKeys.Dark]: false,
   },
