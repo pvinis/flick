@@ -1,7 +1,7 @@
 {
   "name": "flickjs",
   "actualName": "flick",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "🌝 🌚 Switch between light and dark mode, and have all your tools swap!",
   "main": "index.js",
   "repository": "git@github.com:pvinis/flick.git",
