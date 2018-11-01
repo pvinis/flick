@@ -4,8 +4,8 @@ script:
   - echo "npm test temporarily disabled"
 
 deploy:
-  # provider: script
-  # script: "npm publish"
   provider: npm
   email: "pvinis@gmail.com"
   api_key: "$NPM_TOKEN"
+  on:
+    tags: true

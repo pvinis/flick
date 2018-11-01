@@ -1,5 +1,8 @@
 
-flick
+# flick
+
+[![Build Status](https://travis-ci.org/pvinis/flick.svg?branch=master)](https://travis-ci.org/pvinis/flick)
+
 
 use .flickrc for something like "light" or "dark".
 
