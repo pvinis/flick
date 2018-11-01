@@ -1,5 +1,6 @@
 const extensions = [
   require('./macos'),
+  require('./vscode'),
 ]
 
 const runExtensions = (shade) => {

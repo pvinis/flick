@@ -24,6 +24,7 @@ With `Homebrew`: `brew install pvinis/pvinis/flick`
 
 ## Supported extensions
 - macOS
+- VSCode
 Everyone is welcome to add, contribute, or suggest new ones.  
 Planned:
 - iTerm
