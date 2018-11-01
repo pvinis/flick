@@ -21,3 +21,10 @@ With `Homebrew`: `brew install pvinis/pvinis/flick`
 `flick` will switch between `LIGHT` and `DARK` mode.  
 `flick on` or `flick light` will turn `LIGHT` mode on.  
 `flick off` or `flick dark` will turn `DARK` mode on.  
+
+## Supported extensions
+- macOS
+Everyone is welcome to add, contribute, or suggest new ones.  
+Planned:
+- iTerm
+- vim/neovim

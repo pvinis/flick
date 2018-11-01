@@ -1,8 +1,13 @@
-const runMacos = require('./macos')
+const extensions = [
+  require('./macos'),
+]
 
 const runExtensions = (shade) => {
-  console.log('Running macos..')
-  runMacos(shade)
+  extensions.forEach(ext => {
+    if (!ext.shouldRun()) { return }
+    console.log(`Running ${ext.name}..`)
+    ext.run(shade)
+  })
 }
 
 module.exports = runExtensions
