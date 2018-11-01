@@ -1,6 +1,5 @@
 language: node_js
 
 deploy:
-  provider: npm
-  email: "pvinis@gmail.com"
-  api_key: "$NPM_TOKEN"
+  provider: script
+  script: "npm publish"
