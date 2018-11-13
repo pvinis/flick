@@ -4,7 +4,7 @@ const chalk = require('chalk')
 const fs = require('fs')
 const minimist = require('minimist')
 const Configstore = require('configstore')
-const pkg = require('./package.json')
+const pkg = require('../package.json')
 
 const runExtensions = require('./extensions')
 

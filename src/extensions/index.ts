@@ -1,4 +1,7 @@
-const extensions = [
+import { Extension } from '../types'
+
+
+const extensions: Extension[] = [
   require('./macos'),
   require('./vscode'),
 ]

@@ -4,13 +4,18 @@ const chalk = require('chalk')
 const home = require('os').homedir()
 const settingsFile = `${home}/Library/Application Support/Code/User/settings.json`
 
-const name = 'VSCode'
+import { Extension } from '../types'
 
-const shouldRun = () => {
+
+const vscode: Extension = {
+   name: 'VSCode',
+
+
+ shouldRun: () => {
   return fs.existsSync(settingsFile)
 }
-
-const run = shade => {
+,
+ run: shade => {
   fs.readFile(settingsFile, 'utf-8', (err, data) => {
     if (err) { 
       console.log(err)
@@ -29,9 +34,6 @@ const run = shade => {
     })
   })
 }
-
-module.exports = {
-  name,
-  shouldRun,
-  run,
 }
+
+module.exports = vscode

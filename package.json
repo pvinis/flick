@@ -7,8 +7,11 @@
   "repository": "git@github.com:pvinis/flick.git",
   "author": "Pavlos Vinieratos <pvinis@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "fl": "node ./built/index.js"
+  },
   "bin": {
-    "flick": "./index.js"
+    "flick": "./built/index.js"
   },
   "dependencies": {
     "chalk": "^2.4.1",
@@ -17,5 +20,10 @@
     "inquirer": "^6.2.0",
     "minimist": "^1.2.0",
     "run-applescript": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.7",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
   }
 }

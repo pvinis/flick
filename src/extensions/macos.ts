@@ -1,10 +1,7 @@
 const runApplescript = require('run-applescript')
- 
-const name = 'macOS'
 
-const shouldRun = () => {
-  return process.platform === 'darwin'
-}
+import { Extension } from '../types'
+
 
 const script = shade => `
   tell application "System Events"
@@ -14,12 +11,15 @@ const script = shade => `
   end tell
 `
 
-const run = shade => {
+
+const macos: Extension = {
+  name: 'macOS',
+  shouldRun: () => {
+  return process.platform === 'darwin'
+},
+ run: shade => {
   runApplescript(script(shade))
 }
-
-module.exports = {
-  name,
-  shouldRun,
-  run,
 }
+
+module.exports = macos
