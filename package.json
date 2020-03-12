@@ -15,7 +15,7 @@
     "clui": "^0.3.6",
     "configstore": "^4.0.0",
     "inquirer": "^6.2.0",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.2",
     "run-applescript": "^3.2.0"
   }
 }
