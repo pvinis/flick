@@ -13,9 +13,9 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "clui": "^0.3.6",
-    "configstore": "^4.0.0",
-    "inquirer": "^6.2.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^9.0.0",
     "minimist": "^1.2.0",
-    "run-applescript": "^3.2.0"
+    "run-applescript": "^4.0.0"
   }
 }
