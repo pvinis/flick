@@ -16,6 +16,12 @@
     "configstore": "^4.0.0",
     "inquirer": "^6.2.0",
     "minimist": "^1.2.0",
-    "run-applescript": "^3.2.0"
-  }
+    "run-applescript": "^3.2.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
