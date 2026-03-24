@@ -1,4 +1,9 @@
 
+> ## ⚠️ ARCHIVED ⚠️
+> **This project is no longer maintained. Its successor is [pvinis/dark-scripter](https://github.com/pvinis/dark-scripter).**
+
+---
+
 # flick
 
 [![Build Status](https://travis-ci.org/pvinis/flick.svg?branch=master)](https://travis-ci.org/pvinis/flick)
